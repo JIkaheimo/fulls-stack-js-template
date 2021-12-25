@@ -1,0 +1,23 @@
+{
+  "name": "@jikaheimo/root",
+  "private": true,
+  "devDependencies": {
+    "husky": "^7.0.4",
+    "lerna": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx lerna run --concurrency 1 --stream precommit"
+    }
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "lerna run lint --stream",
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "dev": "lerna run dev --stream"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

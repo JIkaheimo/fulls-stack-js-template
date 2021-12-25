@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@": "./src",
+          "@routes": "./src/routes",
+          "@mw": "./src/middlewares",
+          "@db": "./src/db"
+        }
+      }
+    ]
+  ]
+}
