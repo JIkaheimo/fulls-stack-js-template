@@ -15,7 +15,9 @@
     "lint": "lerna run lint --stream",
     "start": "lerna run start --stream",
     "build": "lerna run build --stream",
-    "dev": "lerna run dev --stream"
+    "dev": "lerna run dev --stream",
+    "test": "lerna run test --stream",
+    "bootstrap": "lerna exec yarn install"
   },
   "workspaces": [
     "packages/*"

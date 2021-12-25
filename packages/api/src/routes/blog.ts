@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { Blog } from '@jikaheimo/shared';
-import { authenticate, authorize, validate } from '@mw';
-import { BlogModel } from '@db';
+import { authenticate, authorize, validate } from '@mw/index';
+import { BlogModel } from '@db/index';
 import { blogCreateSchema } from '@/schemas/blog';
 
 const router = Router();

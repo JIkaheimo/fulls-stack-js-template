@@ -10,6 +10,10 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
@@ -17,10 +21,10 @@
       "@cmp/*": ["./src/components/*"],
       "@api/*": ["./src/api/*"]
     },
-    "types": ["webpack-env"],
+    "types": ["webpack-env", "jest", "node", "@types/jest"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "env.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": ["node_modules"],
   "files": ["./index.d.ts"]
 }

@@ -1,7 +1,6 @@
 {
   "env": {
-    "node": true,
-    "jest": true
+    "node": true
   },
   "globals": {
     "console": true
@@ -45,5 +44,13 @@
         "project": "./tsconfig.json"
       }
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.test.{j,t}s?(x)"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }

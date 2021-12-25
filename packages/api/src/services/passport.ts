@@ -1,9 +1,10 @@
+import { User } from '@jikaheimo/shared';
 import passport from 'passport';
 import { Strategy, VerifyFunction } from 'passport-google-oauth2';
 import { UserModel } from '@/db';
 
 passport.serializeUser((user, done) => {
-  done(null, user.id);
+  done(null, (user as User).id);
 });
 
 passport.deserializeUser(async (id, done) => {

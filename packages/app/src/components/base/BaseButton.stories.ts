@@ -1,22 +1,13 @@
-import { Story } from '@storybook/vue3';
+// import { Story } from '@storybook/vue3';
 
 import BaseButton from './BaseButton.vue';
 
 export default {
-  title: 'Components/BaseButton',
+  title: 'Base/Button',
   component: BaseButton,
 };
 
-const Template: Story = (args) => ({
+export const Primary = () => ({
   components: { BaseButton },
-  setup() {
-    return { args };
-  },
-  template: '<BaseButton />',
+  template: '<BaseButton name="asd" />',
 });
-
-export const Primary = Template.bind({});
-Primary.args = {};
-
-export const Secondary = Template.bind({});
-Secondary.args = {};
