@@ -19,7 +19,7 @@ export const actionsData = {
   onArchiveTask: action('archive-task'),
 };
 
-const Template: Story<{ task: Task }> = (args) => ({
+const Template: Story<{ task?: Task }> = (args) => ({
   components: { TaskItem },
 
   setup() {

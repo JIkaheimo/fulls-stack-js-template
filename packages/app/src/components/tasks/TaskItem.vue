@@ -25,12 +25,12 @@ const pinTask = () => emit('pin-task', task.value.id)
 </script>
 
 <template>
-  <div class="flex flex-row items-center space-x-4 w-100 justify-between shadow-md p-3">
+  <div class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3">
     <div class="flex flex-row items-center">
       <BaseCheckbox
         v-if="!isChecked"
         :id="`task-${task.id}-checked`"
-        class="mr-2"
+        class="mr-2 border-cyan-600"
         :checked="isChecked"
         disabled
         name="checked"
@@ -46,6 +46,7 @@ const pinTask = () => emit('pin-task', task.value.id)
         :id="`task-${task.id}-title`"
         :value="task.title"
         readonly
+        class="bg-inherit"
         placeholder="Input title"
       />
     </div>
