@@ -7,17 +7,21 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-recommended',
     '@vue/eslint-config-typescript',
     '@vue/airbnb',
     'prettier',
   ],
+  plugins: ['vue'],
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
+    parser: '@typescript-eslint/parser',
   },
-  rules: {
-    'vue/script-setup-uses-vars': 'error',
+  globals: {
+    defineEmits: 'readonly',
+    defineProps: 'readonly',
   },
   settings: {
     'import/resolver': {
@@ -32,6 +36,23 @@ module.exports = {
       files: ['src/**/*.spec.{j,t}s?(x)'],
       env: {
         jest: true,
+      },
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+    {
+      files: ['src/**/*.stories.{j,t}s?(x)', '**/*.config.{t,j}s'],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      },
+    },
+    // Fix no-used-vars when importing ts types in .vue files
+    {
+      files: ['src/**/*.vue'],
+      rules: {
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'error',
       },
     },
   ],

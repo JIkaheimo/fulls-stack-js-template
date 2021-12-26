@@ -62,7 +62,6 @@
   },
   "main": "src/index.ts",
   "name": "@jikaheimo/api",
-  "private": true,
   "scripts": {
     "dev": "nodemon",
     "lint": "eslint --fix src/** test/**",

@@ -2,8 +2,12 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
+    "allowJs": false,
     "strict": true,
     "jsx": "preserve",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -14,17 +18,23 @@
     "noUnusedParameters": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
+    "noErrorTruncation": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "noEmit": true,
     "paths": {
       "@/*": ["./src/*"],
       "@cmp/*": ["./src/components/*"],
       "@api/*": ["./src/api/*"]
     },
-    "types": ["webpack-env", "jest", "node", "@types/jest"],
+    "types": ["vite/client", "webpack-env", "jest", "node", "@types/jest"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "exclude": ["node_modules"],
-  "files": ["./index.d.ts"]
+  "files": ["src/shims-vue.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "typings/**/*.d.ts"],
+  "exclude": ["node_modules", "src/**/*.js", "src/**/*.jsx"]
 }
