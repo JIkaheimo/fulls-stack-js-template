@@ -21600,6 +21600,11 @@ vue-class-component@^7.1.0:
   resolved "https://registry.npmjs.org/vue-class-component/-/vue-class-component-7.2.6.tgz#8471e037b8e4762f5a464686e19e5afc708502e4"
   integrity sha512-+eaQXVrAm/LldalI272PpDe3+i4mPis0ORiMYxF6Ae4hyuCh15W8Idet7wPUEs4N4YptgFHGys4UrgNQOMyO6w==
 
+vue-content-loader@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/vue-content-loader/-/vue-content-loader-2.0.1.tgz#c6a3ff0e653671e5e8cff9e0c3814e6d04d3411d"
+  integrity sha512-pkof4+q2xmzNEdhqelxtJejeP/vQUJtLle4/v2ueG+HURqM9Q/GIGC8GJ2bVVWeLfTDET51jqimwQdmxJTlu0g==
+
 vue-docgen-api@^4.38.0:
   version "4.43.1"
   resolved "https://registry.npmjs.org/vue-docgen-api/-/vue-docgen-api-4.43.1.tgz#a35708443363db17e3f0689b23fc5eedff6bd585"

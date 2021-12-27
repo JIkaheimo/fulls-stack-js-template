@@ -8,97 +8,19 @@ exports[`Storyshots Base/Button Primary 1`] = `
 </button>
 `;
 
-exports[`Storyshots Example/Button Large 1`] = `
-<button
-  type="button"
-/>
-`;
-
-exports[`Storyshots Example/Button Primary 1`] = `
-<div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-md p-3"
->
-  <div
-    class="flex flex-row items-center"
-  >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-check fa-w-16 text-green-500 mr-2"
-      data-icon="check"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        class=""
-        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
-        fill="currentColor"
-      />
-    </svg>
-    <label
-      class="inline-flex items-center"
-      for="task-1-title"
-    >
-      <input
-        class="form-input"
-        id="task-1-title"
-        placeholder="Input title"
-        readonly=""
-      />
-       
-    </label>
-  </div>
-  <!--v-if-->
-</div>
-`;
-
-exports[`Storyshots Example/Button Secondary 1`] = `
-<button
-  type="button"
-/>
-`;
-
-exports[`Storyshots Example/Button Small 1`] = `
-<button
-  type="button"
-/>
-`;
-
-exports[`Storyshots Example/Header Logged In 1`] = `
-<button
-  type="button"
-/>
-`;
-
-exports[`Storyshots Example/Header Logged Out 1`] = `
-<div
-  user="[object Object]"
-/>
-`;
-
-exports[`Storyshots Example/Page Logged In 1`] = `<div />`;
-
-exports[`Storyshots Example/Page Logged Out 1`] = `
-<article
-  user="[object Object]"
-/>
-`;
-
 exports[`Storyshots Tasks/TaskItem Archived 1`] = `
 <div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-md p-3"
+  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
 >
   <div
-    class="flex flex-row items-center"
+    class="flex flex-row items-center space-x-2"
   >
     <label
       class="inline-flex items-center"
       for="task-1-checked"
     >
       <input
-        class="mr-2 form-checkbox border rounded text-indigo-600"
+        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
         disabled=""
         id="task-1-checked"
         name="checked"
@@ -111,7 +33,7 @@ exports[`Storyshots Tasks/TaskItem Archived 1`] = `
       for="task-1-title"
     >
       <input
-        class="form-input"
+        class="bg-inherit form-input"
         id="task-1-title"
         placeholder="Input title"
         readonly=""
@@ -150,17 +72,17 @@ exports[`Storyshots Tasks/TaskItem Default 1`] = `
 
 exports[`Storyshots Tasks/TaskItem Pinned 1`] = `
 <div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-md p-3"
+  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
 >
   <div
-    class="flex flex-row items-center"
+    class="flex flex-row items-center space-x-2"
   >
     <label
       class="inline-flex items-center"
       for="task-1-checked"
     >
       <input
-        class="mr-2 form-checkbox border rounded text-indigo-600"
+        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
         disabled=""
         id="task-1-checked"
         name="checked"
@@ -173,7 +95,7 @@ exports[`Storyshots Tasks/TaskItem Pinned 1`] = `
       for="task-1-title"
     >
       <input
-        class="form-input"
+        class="bg-inherit form-input"
         id="task-1-title"
         placeholder="Input title"
         readonly=""
@@ -199,5 +121,1170 @@ exports[`Storyshots Tasks/TaskItem Pinned 1`] = `
       />
     </svg>
   </button>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskList Default 1`] = `
+<div
+  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
+>
+  <div
+    class="flex flex-row items-center space-x-2"
+  >
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-check fa-w-16 text-green-500"
+      data-icon="check"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class=""
+        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+        fill="currentColor"
+      />
+    </svg>
+    <label
+      class="inline-flex items-center"
+      for="task-1-title"
+    >
+      <input
+        class="bg-inherit form-input"
+        id="task-1-title"
+        placeholder="Input title"
+        readonly=""
+      />
+       
+    </label>
+  </div>
+  <!--v-if-->
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskList Empty 1`] = `
+<div
+  style="margin: 3em;"
+>
+  <div
+    class="shadow-md w-100"
+  >
+    
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#p6ix9eaffil)"
+          height="100%"
+          style="fill: url(#84mk3ktuwn4);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="p6ix9eaffil"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="84mk3ktuwn4"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#nx0yoeetau)"
+          height="100%"
+          style="fill: url(#f0y2owpraa7);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="nx0yoeetau"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="f0y2owpraa7"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#l5f9a25ryk)"
+          height="100%"
+          style="fill: url(#ba75gr3oggj);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="l5f9a25ryk"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="ba75gr3oggj"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#lttb9r3vig)"
+          height="100%"
+          style="fill: url(#2s2emy4sdbg);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="lttb9r3vig"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="2s2emy4sdbg"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#o3gq23ajt8l)"
+          height="100%"
+          style="fill: url(#hld6lnil0rp);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="o3gq23ajt8l"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="hld6lnil0rp"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    <div
+      class="shadow-sm p-3"
+    >
+      <svg
+        height="40"
+        preserveAspectRatio="xMidYMid meet"
+        version="1.1"
+        viewBox="0 0 100% 40"
+        width="100%"
+      >
+        <rect
+          clip-path="url(#7sz19tdwbos)"
+          height="100%"
+          style="fill: url(#a6lesa0ylg8);"
+          width="100%"
+          x="0"
+          y="0"
+        />
+        <defs>
+          <clippath
+            id="7sz19tdwbos"
+          >
+            
+            <circle
+              cx="15"
+              cy="20"
+              r="15"
+            />
+            <rect
+              height="40"
+              width="100%"
+              x="45"
+              y="5"
+            />
+            
+          </clippath>
+          <lineargradient
+            id="a6lesa0ylg8"
+          >
+            <stop
+              offset="0%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-2; 1"
+              />
+            </stop>
+            <stop
+              offset="50%"
+              stop-color="#ecebeb"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1.5; 1.5"
+              />
+            </stop>
+            <stop
+              offset="100%"
+              stop-color="#f3f3f3"
+              stop-opacity="1"
+            >
+              <animate
+                attributeName="offset"
+                dur="2s"
+                repeatCount="indefinite"
+                values="-1; 2"
+              />
+            </stop>
+          </lineargradient>
+        </defs>
+      </svg>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskList Loading 1`] = `
+<div
+  style="margin: 3em;"
+>
+  <div
+    class="shadow-md w-100"
+  >
+    
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-6-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-6-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-6-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-6-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-yellow-500"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-0-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-0-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-0-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-0-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-1-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-1-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-1-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-1-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-2-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-2-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-2-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-2-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-3-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-3-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-3-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-3-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-4-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-4-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-4-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-4-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskList With Pinned Tasks 1`] = `
+<div
+  style="margin: 3em;"
+>
+  <div
+    class="shadow-md w-100"
+  >
+    
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-0-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-0-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-0-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-0-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-1-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-1-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-1-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-1-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-2-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-2-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-2-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-2-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-3-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-3-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-3-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-3-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-4-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-4-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-4-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-4-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3 hover:bg-blue-200"
+    >
+      <div
+        class="flex flex-row items-center space-x-2"
+      >
+        <label
+          class="inline-flex items-center"
+          for="task-5-checked"
+        >
+          <input
+            class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+            disabled=""
+            id="task-5-checked"
+            name="checked"
+            type="checkbox"
+          />
+           
+        </label>
+        <label
+          class="inline-flex items-center"
+          for="task-5-title"
+        >
+          <input
+            class="bg-inherit form-input"
+            id="task-5-title"
+            placeholder="Input title"
+            readonly=""
+          />
+           
+        </label>
+      </div>
+      <button>
+        <svg
+          aria-hidden="true"
+          class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+          data-icon="star"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          viewBox="0 0 576 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class=""
+            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+    </div>
+    
+  </div>
 </div>
 `;
