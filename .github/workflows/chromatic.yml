@@ -5,7 +5,7 @@ name: 'Chromatic Deployment'
 on:
   push:
     branches:
-      - main
+      - '**'
 
 # List of jobs
 jobs:
