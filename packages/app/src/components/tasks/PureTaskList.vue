@@ -1,7 +1,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { Task } from '@jikaheimo/shared';
+import { Task, TaskState } from '@jikaheimo/shared';
 import { ContentLoader } from 'vue-content-loader'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
@@ -29,7 +29,7 @@ const onPinTask = (taskId: string) => {
   emit('pin-task', taskId)
 }
 
-const tasksInOrder = computed(() => [...props.tasks].sort((a, b) => b.state - a.state))
+const tasksInOrder = computed(() => [...props.tasks].filter(({state}) => state !== TaskState.Archived).sort((a, b) => b.state - a.state))
 
 </script>
 

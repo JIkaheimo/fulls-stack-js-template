@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "license": "ISC",
-  "main": "index.js",
+  "main": "index.ts",
   "name": "@jikaheimo/shared",
   "scripts": {},
   "version": "1.0.0"

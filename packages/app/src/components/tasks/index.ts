@@ -1,5 +1,4 @@
-import TaskItem from './TaskItem.vue';
-// import TaskList from './TaskList.vue';
-import PureTaskList from './PureTaskList.vue';
+export { default as TaskItem } from './TaskItem.vue';
+export { default as TaskList } from './TaskList.vue';
+export { default as  PureTaskList } from './PureTaskList.vue';
 
-export { TaskItem, PureTaskList };

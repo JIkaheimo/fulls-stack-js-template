@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faStar, faCheck } from '@fortawesome/free-solid-svg-icons'
-
-import { Task, TaskState } from '@jikaheimo/shared';
 import { computed } from 'vue';
+import { Task, TaskState } from '@jikaheimo/shared';
+import { faCheck, faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { BaseCheckbox, BaseInput } from '@/components/base';
 
 const props = defineProps<{ task: Task }>();
@@ -32,16 +31,10 @@ const pinTask = () => emit('pin-task', task.value.id)
         :id="`task-${task.id}-checked`"
         class="border-cyan-600"
         :checked="isChecked"
-        disabled
         name="checked"
-      />
-      <FontAwesomeIcon
-        v-else
-        class="text-green-500"
-        aria-hidden="true"
-        :icon="faCheck"
         @click="archiveTask"
       />
+      <FontAwesomeIcon v-else class="text-green-500" aria-hidden="true" :icon="faCheck" />
       <BaseInput
         :id="`task-${task.id}-title`"
         :value="task.title"
@@ -51,7 +44,7 @@ const pinTask = () => emit('pin-task', task.value.id)
       />
     </div>
 
-    <button v-if="!isChecked" @click="pinTask">
+    <button v-if="!isChecked" class="p-2" aria-label="Pin Task" @click="pinTask">
       <FontAwesomeIcon
         :class="{
           'text-yellow-500': isPinned,
@@ -63,4 +56,5 @@ const pinTask = () => emit('pin-task', task.value.id)
     </button>
   </div>
 </template>
+
 
