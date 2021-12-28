@@ -6,16 +6,20 @@ on: push
 
 # List of jobs
 jobs:
-  test:
+  chromatic-deployment:
     # Operating System
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 'packages/app'
     # Job steps
     steps:
       - uses: actions/checkout@v1
-      - run: yarn
-        # Adds Chromatic as a step in the workflow
-      - uses: chromaui/action@v1
-        # Options required for Chromatic's GitHub Action
+      - name: 'Install dependencies'
+        run: yarn
+        working-directory: 'packages/app'
+      - name: 'Publish to Chromatic'
+        uses: chromaui/action@v1
         with:
+          workingDir: 'packages/app'
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
