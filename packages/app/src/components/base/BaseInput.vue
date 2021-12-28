@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{ id: string, label?: string }>()
+defineProps<{ id: string, label?: string, labelClasses?: string[] }>()
 </script>
 
 <script lang="ts">
@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <label class="inline-flex items-center" :for="id">
+  <label :class="labelClasses" class="inline-flex items-center" :for="id">
     <input v-bind="$attrs" :id="id" class="form-input" />
     {{ label || null }}
   </label>
