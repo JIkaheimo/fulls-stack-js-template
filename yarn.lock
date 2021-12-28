@@ -5400,6 +5400,11 @@
   optionalDependencies:
     prettier "^1.18.2 || ^2.0.0"
 
+"@vue/devtools-api@^6.0.0-beta.11":
+  version "6.0.0-beta.21.1"
+  resolved "https://registry.npmjs.org/@vue/devtools-api/-/devtools-api-6.0.0-beta.21.1.tgz#f1410f53c42aa67fa3b01ca7bdba891f69d7bc97"
+  integrity sha512-FqC4s3pm35qGVeXRGOjTsRzlkJjrBLriDS9YXbflHLsfA9FrcKzIyWnLXoNm+/7930E8rRakXuAc2QkC50swAw==
+
 "@vue/eslint-config-airbnb@^6.0.0":
   version "6.0.0"
   resolved "https://registry.npmjs.org/@vue/eslint-config-airbnb/-/eslint-config-airbnb-6.0.0.tgz#6270f44dbb18c15d95be8e450966fe41249bba8a"
@@ -21732,6 +21737,18 @@ vue@^3.2.25:
     "@vue/runtime-dom" "3.2.26"
     "@vue/server-renderer" "3.2.26"
     "@vue/shared" "3.2.26"
+
+vuex-module-decorators@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/vuex-module-decorators/-/vuex-module-decorators-2.0.0.tgz#46fa63cc38496cf5655853a3193e53c1f2557ebc"
+  integrity sha512-awfjlJR9PlX2tDNzRk5fUnksO4TC5Z93Q3ZycvROCiLId7MZ1GdY4sHpEvPqm02UZ8jF+BkuyN5ezghOAk3zeQ==
+
+vuex@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.npmjs.org/vuex/-/vuex-4.0.2.tgz#f896dbd5bf2a0e963f00c67e9b610de749ccacc9"
+  integrity sha512-M6r8uxELjZIK8kTKDGgZTYX/ahzblnzC4isU1tpmEuOIIKmV+TRdc+H4s8ds2NuZ7wpUTdGRzJRtoj+lI+pc0Q==
+  dependencies:
+    "@vue/devtools-api" "^6.0.0-beta.11"
 
 w3c-hr-time@^1.0.1, w3c-hr-time@^1.0.2:
   version "1.0.2"

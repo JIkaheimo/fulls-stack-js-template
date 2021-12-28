@@ -1,12 +1,12 @@
 import { Story } from '@storybook/vue3';
 import { Task, TaskState } from '@jikaheimo/shared';
-import TaskList from './TaskList.vue';
+import PureTaskList from './PureTaskList.vue';
 
 import * as TaskStories from './TaskItem.stories';
 
 export default {
-  component: TaskList,
-  title: 'Tasks/TaskList',
+  component: PureTaskList,
+  title: 'Tasks/PureTaskList',
   decorators: [() => ({ template: '<div style="margin: 3em;"><story/></div>' })],
   argTypes: {
     onPinTask: {},
@@ -15,13 +15,13 @@ export default {
 };
 
 const Template: Story<{ tasks: Task[]; loading?: boolean }> = (args) => ({
-  components: { TaskList },
+  components: { PureTaskList },
 
   setup() {
     return { args, ...TaskStories.actionsData };
   },
 
-  template: '<TaskList v-bind="args" />',
+  template: '<PureTaskList v-bind="args" />',
 });
 
 const tasks: Task[] = Array.from({ length: 6 }, (_, i) => ({

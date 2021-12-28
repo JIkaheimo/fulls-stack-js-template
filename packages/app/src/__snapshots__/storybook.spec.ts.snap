@@ -8,61 +8,7 @@ exports[`Storyshots Base/Button Primary 1`] = `
 </button>
 `;
 
-exports[`Storyshots Tasks/TaskItem Archived 1`] = `
-<div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
->
-  <div
-    class="flex flex-row items-center space-x-2"
-  >
-    <label
-      class="inline-flex items-center"
-      for="task-1-checked"
-    >
-      <input
-        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
-        disabled=""
-        id="task-1-checked"
-        name="checked"
-        type="checkbox"
-      />
-       
-    </label>
-    <label
-      class="inline-flex items-center"
-      for="task-1-title"
-    >
-      <input
-        class="bg-inherit form-input"
-        id="task-1-title"
-        placeholder="Input title"
-        readonly=""
-      />
-       
-    </label>
-  </div>
-  <button>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-star fa-w-18 text-yellow-500"
-      data-icon="star"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 576 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        class=""
-        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-        fill="currentColor"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Tasks/TaskItem Default 1`] = `
+exports[`Storyshots Tasks/PureTaskList Default 1`] = `
 <button
   class="btn"
 >
@@ -70,101 +16,7 @@ exports[`Storyshots Tasks/TaskItem Default 1`] = `
 </button>
 `;
 
-exports[`Storyshots Tasks/TaskItem Pinned 1`] = `
-<div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
->
-  <div
-    class="flex flex-row items-center space-x-2"
-  >
-    <label
-      class="inline-flex items-center"
-      for="task-1-checked"
-    >
-      <input
-        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
-        disabled=""
-        id="task-1-checked"
-        name="checked"
-        type="checkbox"
-      />
-       
-    </label>
-    <label
-      class="inline-flex items-center"
-      for="task-1-title"
-    >
-      <input
-        class="bg-inherit form-input"
-        id="task-1-title"
-        placeholder="Input title"
-        readonly=""
-      />
-       
-    </label>
-  </div>
-  <button>
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-star fa-w-18 text-gray-200"
-      data-icon="star"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 576 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        class=""
-        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
-        fill="currentColor"
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Tasks/TaskList Default 1`] = `
-<div
-  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
->
-  <div
-    class="flex flex-row items-center space-x-2"
-  >
-    <svg
-      aria-hidden="true"
-      class="svg-inline--fa fa-check fa-w-16 text-green-500"
-      data-icon="check"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        class=""
-        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
-        fill="currentColor"
-      />
-    </svg>
-    <label
-      class="inline-flex items-center"
-      for="task-1-title"
-    >
-      <input
-        class="bg-inherit form-input"
-        id="task-1-title"
-        placeholder="Input title"
-        readonly=""
-      />
-       
-    </label>
-  </div>
-  <!--v-if-->
-</div>
-`;
-
-exports[`Storyshots Tasks/TaskList Empty 1`] = `
+exports[`Storyshots Tasks/PureTaskList Empty 1`] = `
 <div
   style="margin: 3em;"
 >
@@ -183,16 +35,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#p6ix9eaffil)"
+          clip-path="url(#l9f9ouyjjup)"
           height="100%"
-          style="fill: url(#84mk3ktuwn4);"
+          style="fill: url(#d7ctpnxsm7t);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="p6ix9eaffil"
+            id="l9f9ouyjjup"
           >
             
             <circle
@@ -209,7 +61,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="84mk3ktuwn4"
+            id="d7ctpnxsm7t"
           >
             <stop
               offset="0%"
@@ -262,16 +114,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#nx0yoeetau)"
+          clip-path="url(#tyazlnpayqj)"
           height="100%"
-          style="fill: url(#f0y2owpraa7);"
+          style="fill: url(#aqv6zyr1bwh);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="nx0yoeetau"
+            id="tyazlnpayqj"
           >
             
             <circle
@@ -288,7 +140,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="f0y2owpraa7"
+            id="aqv6zyr1bwh"
           >
             <stop
               offset="0%"
@@ -341,16 +193,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#l5f9a25ryk)"
+          clip-path="url(#urlzj0bewu)"
           height="100%"
-          style="fill: url(#ba75gr3oggj);"
+          style="fill: url(#jq85dh5ut0i);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="l5f9a25ryk"
+            id="urlzj0bewu"
           >
             
             <circle
@@ -367,7 +219,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="ba75gr3oggj"
+            id="jq85dh5ut0i"
           >
             <stop
               offset="0%"
@@ -420,16 +272,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#lttb9r3vig)"
+          clip-path="url(#21dyiklfzha)"
           height="100%"
-          style="fill: url(#2s2emy4sdbg);"
+          style="fill: url(#vtes7xs1zwr);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="lttb9r3vig"
+            id="21dyiklfzha"
           >
             
             <circle
@@ -446,7 +298,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="2s2emy4sdbg"
+            id="vtes7xs1zwr"
           >
             <stop
               offset="0%"
@@ -499,16 +351,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#o3gq23ajt8l)"
+          clip-path="url(#tbuokpcvyy)"
           height="100%"
-          style="fill: url(#hld6lnil0rp);"
+          style="fill: url(#uljfldqw08a);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="o3gq23ajt8l"
+            id="tbuokpcvyy"
           >
             
             <circle
@@ -525,7 +377,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="hld6lnil0rp"
+            id="uljfldqw08a"
           >
             <stop
               offset="0%"
@@ -578,16 +430,16 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
         width="100%"
       >
         <rect
-          clip-path="url(#7sz19tdwbos)"
+          clip-path="url(#02wscj5har5e)"
           height="100%"
-          style="fill: url(#a6lesa0ylg8);"
+          style="fill: url(#nk01vtv2vem);"
           width="100%"
           x="0"
           y="0"
         />
         <defs>
           <clippath
-            id="7sz19tdwbos"
+            id="02wscj5har5e"
           >
             
             <circle
@@ -604,7 +456,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
             
           </clippath>
           <lineargradient
-            id="a6lesa0ylg8"
+            id="nk01vtv2vem"
           >
             <stop
               offset="0%"
@@ -651,7 +503,7 @@ exports[`Storyshots Tasks/TaskList Empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tasks/TaskList Loading 1`] = `
+exports[`Storyshots Tasks/PureTaskList Loading 1`] = `
 <div
   style="margin: 3em;"
 >
@@ -970,7 +822,7 @@ exports[`Storyshots Tasks/TaskList Loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots Tasks/TaskList With Pinned Tasks 1`] = `
+exports[`Storyshots Tasks/PureTaskList With Pinned Tasks 1`] = `
 <div
   style="margin: 3em;"
 >
@@ -1286,5 +1138,154 @@ exports[`Storyshots Tasks/TaskList With Pinned Tasks 1`] = `
     </div>
     
   </div>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskItem Archived 1`] = `
+<div
+  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
+>
+  <div
+    class="flex flex-row items-center space-x-2"
+  >
+    <label
+      class="inline-flex items-center"
+      for="task-1-checked"
+    >
+      <input
+        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+        disabled=""
+        id="task-1-checked"
+        name="checked"
+        type="checkbox"
+      />
+       
+    </label>
+    <label
+      class="inline-flex items-center"
+      for="task-1-title"
+    >
+      <input
+        class="bg-inherit form-input"
+        id="task-1-title"
+        placeholder="Input title"
+        readonly=""
+      />
+       
+    </label>
+  </div>
+  <button>
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-star fa-w-18 text-yellow-500"
+      data-icon="star"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class=""
+        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskItem Default 1`] = `
+<div
+  style="margin: 3em;"
+>
+  <div
+    class="shadow-md w-100"
+  >
+    <div
+      class="flex flex-col space-y-3 justify-center items-center p-5"
+    >
+      <svg
+        aria-hidden="true"
+        class="svg-inline--fa fa-check fa-w-16 fa-2x text-green-600"
+        data-icon="check"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          class=""
+          d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+          fill="currentColor"
+        />
+      </svg>
+      <p
+        class="font-bold"
+      >
+        You have no tasks
+      </p>
+      <p
+        class=""
+      >
+        Sit back and relax
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Tasks/TaskItem Pinned 1`] = `
+<div
+  class="flex flex-row items-center space-x-4 w-100 justify-between shadow-sm p-3"
+>
+  <div
+    class="flex flex-row items-center space-x-2"
+  >
+    <label
+      class="inline-flex items-center"
+      for="task-1-checked"
+    >
+      <input
+        class="border-cyan-600 form-checkbox border rounded text-indigo-600"
+        disabled=""
+        id="task-1-checked"
+        name="checked"
+        type="checkbox"
+      />
+       
+    </label>
+    <label
+      class="inline-flex items-center"
+      for="task-1-title"
+    >
+      <input
+        class="bg-inherit form-input"
+        id="task-1-title"
+        placeholder="Input title"
+        readonly=""
+      />
+       
+    </label>
+  </div>
+  <button>
+    <svg
+      aria-hidden="true"
+      class="svg-inline--fa fa-star fa-w-18 text-gray-200"
+      data-icon="star"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class=""
+        d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"
+        fill="currentColor"
+      />
+    </svg>
+  </button>
 </div>
 `;

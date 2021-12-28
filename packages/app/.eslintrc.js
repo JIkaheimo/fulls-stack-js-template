@@ -14,6 +14,9 @@ module.exports = {
   ],
   plugins: ['vue'],
   parser: 'vue-eslint-parser',
+  rules: {
+    'import/no-cycle': 'off',
+  },
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -32,6 +35,12 @@ module.exports = {
     },
   },
   overrides: [
+    {
+      files: ['src/store/modules/*.ts'],
+      rules: {
+        'class-methods-use-this': 'off',
+      },
+    },
     {
       files: ['src/**/*.spec.{j,t}s?(x)'],
       env: {
